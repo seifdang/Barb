@@ -26,7 +26,7 @@ app.use(express.json());
 
 // Currency exchange rate for TND (Tunisian Dinar)
 // This would normally come from an API, but for simplicity we'll hardcode it
-const TND_EXCHANGE_RATE = 3; // 1 USD = 2.7 TND
+const TND_EXCHANGE_RATE = 2.7; // 1 USD = 2.7 TND
 app.locals.TND_EXCHANGE_RATE = TND_EXCHANGE_RATE;
 
 // MongoDB Connection

@@ -1,6 +1,6 @@
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const Salon = require('../models/Salon');
 
 // Generate JWT token
@@ -253,4 +253,4 @@ exports.getBarberSalons = async (req, res) => {
     console.error('Error getting barber salons:', error);
     res.status(500).json({ success: false, message: error.message });
   }
-}; 
+};
