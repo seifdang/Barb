@@ -1,7 +1,8 @@
-// Thème amélioré pour l'application de salon de coiffure
-// Ce fichier définit un thème cohérent avec mode sombre
+// theme.js
+// Thème amélioré pour l'application de salon de coiffure (web et mobile)
 
-import { DefaultTheme, DarkTheme } from 'react-native-paper';
+import { DefaultTheme, MD3DarkTheme as PaperDarkTheme } from 'react-native-paper';
+
 
 // Palette de couleurs
 const colors = {
@@ -82,35 +83,21 @@ export const LightTheme = {
   },
   fonts: {
     ...DefaultTheme.fonts,
-    regular: {
-      fontFamily: 'sans-serif',
-      fontWeight: 'normal',
-    },
-    medium: {
-      fontFamily: 'sans-serif-medium',
-      fontWeight: '500',
-    },
-    light: {
-      fontFamily: 'sans-serif-light',
-      fontWeight: '300',
-    },
-    thin: {
-      fontFamily: 'sans-serif-thin',
-      fontWeight: '100',
-    },
+    regular: { fontFamily: 'sans-serif', fontWeight: 'normal' },
+    medium: { fontFamily: 'sans-serif-medium', fontWeight: '500' },
+    light: { fontFamily: 'sans-serif-light', fontWeight: '300' },
+    thin: { fontFamily: 'sans-serif-thin', fontWeight: '100' },
   },
-  animation: {
-    scale: 1.0,
-  },
+  animation: { scale: 1.0 },
 };
 
-// Thème sombre
-export const DarkTheme = {
-  ...DefaultTheme.dark,
+// Thème sombre personnalisé
+export const CustomDarkTheme = {
+  ...PaperDarkTheme,
   dark: true,
   roundness: 8,
   colors: {
-    ...DarkTheme.colors,
+    ...PaperDarkTheme.colors,
     primary: colors.primary.dark,
     accent: colors.accent.dark,
     background: colors.background.dark,
@@ -127,30 +114,17 @@ export const DarkTheme = {
   },
   fonts: {
     ...DefaultTheme.fonts,
-    regular: {
-      fontFamily: 'sans-serif',
-      fontWeight: 'normal',
-    },
-    medium: {
-      fontFamily: 'sans-serif-medium',
-      fontWeight: '500',
-    },
-    light: {
-      fontFamily: 'sans-serif-light',
-      fontWeight: '300',
-    },
-    thin: {
-      fontFamily: 'sans-serif-thin',
-      fontWeight: '100',
-    },
+    regular: { fontFamily: 'sans-serif', fontWeight: 'normal' },
+    medium: { fontFamily: 'sans-serif-medium', fontWeight: '500' },
+    light: { fontFamily: 'sans-serif-light', fontWeight: '300' },
+    thin: { fontFamily: 'sans-serif-thin', fontWeight: '100' },
   },
-  animation: {
-    scale: 1.0,
-  },
+  animation: { scale: 1.0 },
 };
 
+// Export général
 export default {
   LightTheme,
-  DarkTheme,
-  colors
+  CustomDarkTheme,
+  colors,
 };

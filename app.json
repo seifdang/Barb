@@ -1,0 +1,9 @@
+{
+    "expo": {
+      "entryPoint": "./App.js",
+      "web": {
+        "bundler": "webpack",
+        "entryPoint": "./App.js"
+      }
+    }
+  }
