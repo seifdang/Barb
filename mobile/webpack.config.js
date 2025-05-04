@@ -12,6 +12,7 @@ module.exports = async function (env, argv) {
     crypto: require.resolve('crypto-browserify'),
     stream: require.resolve('stream-browserify'),
     buffer: require.resolve('buffer/'),
+    vm: false, // ⬅️ Add this line to avoid "Can't resolve 'vm'"
   };
 
   // Provide globals for process and Buffer

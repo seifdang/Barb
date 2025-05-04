@@ -92,7 +92,7 @@ export const LightTheme = {
 };
 
 // Thème sombre personnalisé
-export const CustomDarkTheme = {
+export const DarkTheme = {
   ...PaperDarkTheme,
   dark: true,
   roundness: 8,
@@ -126,5 +126,6 @@ export const CustomDarkTheme = {
 export default {
   LightTheme,
   CustomDarkTheme,
+  DarkTheme,
   colors,
 };
