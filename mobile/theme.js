@@ -125,7 +125,6 @@ export const DarkTheme = {
 // Export général
 export default {
   LightTheme,
-  CustomDarkTheme,
-  DarkTheme,
+   DarkTheme,
   colors,
 };
